@@ -68,6 +68,7 @@ h1 {
   text-align: center; 
   display: block;
   margin-bottom: 1rem;
+  padding: 0 2rem;
 }
 h1, h2 {
   font-family: Montserrat, sans-serif;
@@ -78,11 +79,13 @@ h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-#welcome-section > p {
+#welcome-section p {
   font-size: 1.3rem;
   font-weight: 200;
   font-style: italic;
   text-align: center;
+  padding: 0 2rem;
+  line-height: 1.5;
 }
 #project-section {
   padding: 2rem 2rem;
@@ -132,7 +135,7 @@ figcaption {
   padding: 10px 15px;
   color: white;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
 }
 .btn:hover {
   background-color: var(--secondary-color);
@@ -169,7 +172,13 @@ figcaption {
     color: white; 
     transform: scale(1.05); 
   }
+footer {
+  padding: 1rem 0.3rem;
+  text-align: right;
+  font-size: 0.8rem;
+  padding-left: 1rem;
 
+}
 @media screen and (max-width: 600px) {
   #navbar { 
     justify-content: center;
@@ -187,15 +196,19 @@ figcaption {
   }
   #navbar li {
     margin: 0.5rem 0;
+    
+  }
+  #navbar a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center; 
+
   }
   #welcome-section,
   #project-section,
   #contact-section {
     margin-left: 15vh; /* Adjust content to the right of the navbar */
     padding: 0;
-  }
-  #welcome-section {
-    height: calc(100vh - 15vh); /* Adjust welcome section height */
   }
 h2 {
    font-size: 1.5rem;
@@ -219,6 +232,9 @@ h2 {
 
 #contact-section a {
   padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+}
+.btn {
   font-size: 0.9rem;
 }
 }
