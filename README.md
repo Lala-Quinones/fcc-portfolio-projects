@@ -21,12 +21,6 @@ Here are the projects featured in this portfolio:
 2. **Blog Post Card**: A visually appealing card design for blog posts.
 3. **House Design Landing Page**: A landing page showcasing a house design project.
 
-## Screenshots
-### Desktop View
-![Desktop View](https://raw.githubusercontent.com/Lala-Quinones/fcc-portfolio-projects/main/screenshot_desktop.png)
-
-### Mobile View
-![Mobile View](https://raw.githubusercontent.com/Lala-Quinones/fcc-portfolio-projects/main/screenshot_mobile.png)
 
 ## Setup Instructions
 To view this project locally, follow these steps:
@@ -34,3 +28,19 @@ To view this project locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/Lala-Quinones/fcc-portfolio-projects.git
+2. Navigate to the project directory:
+   cd fcc-portfolio-projects
+3. Open index.html in your browser to view the project.
+   
+Live Demo
+Check out the live version of the portfolio here: Live Demo
+
+Contact
+Feel free to reach out to me for feedback or collaboration:
+
+Email: lala.justnorth@gmail.com
+GitHub: Lala-Quinones
+LinkedIn: https://www.linkedin.com/in/lalaquinones/
+
+License
+This project is licensed under the MIT License.
