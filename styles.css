@@ -179,6 +179,7 @@ footer {
   padding-left: 1rem;
 
 }
+
 @media screen and (max-width: 600px) {
   #navbar { 
     justify-content: center;
