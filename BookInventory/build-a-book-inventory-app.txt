@@ -1,0 +1,178 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>Book Inventory</h1>
+    <table>
+      <thead>
+        <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="read">
+          <td>The Martian</td>
+          <td>Andy Weir</td>
+          <td>Science Fiction</td>
+          <td><span class="status">Read</span></td>
+          <td ><span class="rate three" >
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+        <tr class="read">
+          <td>Project Hail Mary</td>
+          <td>Andy Weir</td>
+          <td>Science Fiction</td>
+          <td><span class="status">Read</span></td>
+          <td ><span class="rate three" >
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+          <tr class="in-progress">
+          <td>American Gods</td>
+          <td>Nail Gaiman</td>
+          <td>Fantasy</td>
+          <td> <span class="status">In Progress</span></td>
+          <td><span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+        <tr class="read">
+          <td>Percy Jackson and the Olympians</td>
+          <td>Rick Riordan</td>
+          <td>Adventure</td>
+          <td><span class="status">Read</span></td>
+          <td ><span class="rate two" >
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+        <tr class="to-read">
+          <td>The Zookeeper's Wife</td>
+          <td>Diane Ackerman</td>
+          <td>Historical Fiction</td>
+          <td><span class="status">To Read</span></td>
+          <td><span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+        <tr class="in-progress">
+          <td>Fourth Wing</td>
+          <td>Fourth Wing</td>
+          <td>Fantasy</td>
+          <td> <span class="status">In Progress</span></td>
+          <td><span class="rate">
+            <span></span>
+            <span></span>
+            <span></span>
+            </span></td>
+          </tr>
+        
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+tr[class="read"] {
+background-image: linear-gradient( #b9dfd2 20%,  #57CC99 100%)
+}
+tr[class="to-read"]   {
+background-image: linear-gradient(#DBE4ED 20%, #6699CC 100%);
+}
+tr[class="in-progress"] {
+background-image: linear-gradient( #FBF7D1 20%, #FFF275 100%);
+}
+span {
+  display: inline-block;
+}
+tr[class="to-read"] span[class="status"] {
+  border: 3px solid #a34730;
+  border-radius: 10px;background-image: linear-gradient(to right, #F06543 10%, #F06543 100%);
+  padding: 0.5rem;
+}
+tr[class="read"] span[class="status"] {
+  border: 3px solid #4c7e51;
+  border-radius: 10px;background-image: linear-gradient(to right, #8ccf8f 20%, #7DCD85 100%);
+  padding: 0.5rem;
+}
+tr[class="in-progress"] span[class="status"] {
+  border: 3px solid #da8a35;
+  border-radius: 10px;background-image: linear-gradient(to right, #F9A03F 20%, #fbc080 100%);
+  padding: 0.5rem;
+}
+
+span[class^="rate"], span[class="status"]  {
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+}
+span[class^="rate"] > span {
+  border: 2px solid white;
+  border-radius: 10px;
+  margin: 0.3rem;
+  height: 15px;
+  width: 15px;
+  background-color: #EEEEEE;
+}
+
+span[class~="one"]> span:first-child  {
+  background-image: linear-gradient(to right, #F9A03F 20%, #F7D488 100%)
+}
+span[class~="two"]> span:nth-of-type(-n+2)  {
+  background-image: linear-gradient(to right, #F9A03F 20%, #F7D488 100%)
+}
+span[class~="three"] span  {
+  background-image: linear-gradient(to right, #F9A03F 20%, #F7D488 100%)
+}
+table {
+  border: none;
+  border-spacing: 0; 
+  width: 100%;
+}
+th {
+  background-color: #454545;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+
+** end of undefined **
+

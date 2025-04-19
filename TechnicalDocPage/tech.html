@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="tech.css">
+    <title>Technical Documentation</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  </head>
+  <body>
+    <nav id="navbar">
+    <header>Technical Documentation</header>
+    <ul>
+    <li><a class="nav-link" href="#Introduction_to_HTML">Introduction to HTML</a></li>
+    <li><a class="nav-link" href="#Introduction_to_CSS">Introduction to CSS</a></li>
+    <li><a class="nav-link" href="#Introduction_to_JavaScript">Introduction to JavaScript</a></li>
+    <li><a class="nav-link" href="#Introduction_to_Git">Introduction to Git</a></li>
+    <li><a class="nav-link" href="#Introduction_to_APIs">Introduction to APIs</a></li>
+    
+    </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction_to_HTML">
+        <header>Introduction to HTML</header>
+        <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It provides structure to web content by defining elements like headings, paragraphs, and links.</p>
+<p>HTML documents are made up of elements enclosed in tags. These tags tell the browser how to display content.</p>
+      <h2>Key Features of HTML:</h2>
+          <ul>
+          <li>Uses a simple tag-based syntax</li>
+          <li>Supports multimedia elements like images and videos</li>
+          <li>Works in combination with CSS and JavaScript</li>
+          </ul>
+          <h3>Example:</h3>
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My First HTML Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Page&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+      <section class="main-section" id="Introduction_to_CSS">
+        <header>Introduction to CSS</header>
+        <p>CSS (Cascading Style Sheets) is used to control the visual presentation of HTML elements. It allows developers to apply styles such as colors, fonts, and layouts.</p>
+        <p>CSS can be written inline, internally in a <span class="code">&lt;style&gt;</span> tag, or externally in a .css file.</p>
+        <h2>CSS Styling Techniques:</h2>
+          <ul>
+          <li>Inline styling using <span class="code">style</span> attribute</li>
+          <li>Internal styles within a <span class="code">&lt;style&gt;</span> tag</li>
+          <li>External stylesheets for better maintainability</li>
+
+          </ul>
+          <h3>Example</h3>
+        <pre><code>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}</code></pre>
+      </section>
+      <section class="main-section" id="Introduction_to_JavaScript">
+        <header>Introduction to JavaScript</header>
+        <p>JavaScript is a programming language used to create dynamic content and interactivity on websites. It can be used for form validation, animations, and fetching data from servers.</p>
+        <p>JavaScript can be written directly in an HTML document within <span class="code">&lt;script&gt;</span> tags or in an external <span class="code">.js</span> file.</p>
+        <h2>Common JavaScript Features:</h2>
+          <ul>
+          <li>DOM Manipulation</li>
+          <li>Event Handling</li>
+          <li>Fetch API for HTTP Requests</li>
+          </ul>
+          <h3>Example</h3>
+        <pre><code>document.getElementById("demo").innerHTML = "Hello, JavaScript!";</code></pre>
+      </section>
+      <section class="main-section" id="Introduction_to_Git">
+        <header>Introduction to Git</header>
+        <p>Git is a version control system that allows developers to track changes in their codebase. It helps in collaboration and maintaining a history of modifications.</p>
+        <p>Git uses repositories to store project files and their revision history.</p>
+        <h2>Basic Git Commands:</h2>
+          <ul>
+          <li><span class="code">git init</span> – Initialize a repository</li>
+          <li><span class="code">git add .</span>– Add changes to the staging area</li>
+          <li><span class="code">git commit -m "message"</span>– Commit changes with a message</li>
+
+          </ul>
+          <h3>Example:</h3>
+        <pre><code>git init
+git add .
+git commit -m "Initial commit"</code></pre>
+      </section>
+      <section class="main-section" id="Introduction_to_APIs">
+        <header>Introduction to APIs</header>
+        <p>APIs (Application Programming Interfaces) allow different software applications to communicate with each other. They are widely used in web development to fetch or send data between services.</p>
+        <p>APIs can be categorized into RESTful APIs, SOAP APIs, and GraphQL APIs.</p>
+        <h2>Common API Methods:</h2>
+          <ul>
+          <li><span class="code">GET</span> – Retrieve data</li>
+          <li><span class="code">POST</span> – Send data</li>
+          <li><span class="code">PUT</span> – Update existing data</li>
+          <li><span class="code">DELETE</span> – Remove data</li>
+
+          </ul>
+          <h3>Example:</h3>
+        <pre><code>{
+    "user": "JohnDoe",
+    "email": "johndoe@example.com"
+}</code></pre>
+      </section>
+      
+    </main>
+  </body>
+</html

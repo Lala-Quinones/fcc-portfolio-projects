@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Climbing Survey</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+
+        <h1 id="title">Rock Climbing Survey</h1>
+
+<main>
+    <p id="description">Thank you for taking the time to fill out this survey! We’d love to learn more about your climbing style, favorite destinations, and how we can improve the climbing community. Your input helps us create better experiences for all climbers.</p>
+<form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name">Name: <input id="name" type="text" name="name" placeholder="What's your name" required></label>
+    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Where can we contact you?"></label>
+    <label id="number-label" for="number">Age: <input type="number" name="age" id="number" min="12" max="100" placeholder="How old are you?"></label>
+    </fieldset>
+    <label for="dropdown">Preferred Climbing Style
+    <select id="dropdown" name="preferences">
+      <option value="">(select one)</option>
+      <option value="1">Bouldering</option>
+        <option value="2">Sport Climbing</option>
+        <option value="3">Trad Climbing</option>
+         <option value="4">Ice Climbing</option>
+        <option value="5">Other</option>
+          </select>
+    </label> 
+     <label for="area">Favorite Clmibing Area<input id="area" type="text" name="preferences" placeholder="Where would you spend entire seasons?"></label>
+    <fieldset>
+    <legend>
+    Experience Level
+    </legend>
+
+    <label for="beginner"><input type="radio" name="experience" id="beginner" value="beginner" class="inline">Beginner<label>
+    <label for="intermediate"><input type="radio" name="experience" id="Intermediate" value="Intermediate" class="inline">Intermediate<label>
+    <label for="advanced"><input type="radio" name="experience" id="advanced" value="advanced" class="inline">Advanced<label>
+    <label for="professional"><input type="radio" name="experience" id="professional" value="professional" class="inline">Professional<label>
+    </fieldset>
+    <fieldset>
+    <legend>Gear Owned</legend>
+    <label><input value="1" class"inline" type="checkbox" >Climbing Shoes</label>
+    <label><input value="2" class"inline" type="checkbox">Chalk Bag</label>
+    <label><input value="3" class"inline" type="checkbox">Harness</label>
+    <label><input value="4" class"inline" type="checkbox">Helmet</label>
+    <label><input value="5" class"inline" type="checkbox" value="3">Gri-Gri</label>
+    <label><input value="6" class"inline" type="checkbox">Other Belay Device</label>
+    <label><input value="7" class"inline" type="checkbox">Crash Pad</label>
+    </fieldset>
+    <label for="comments">Additional Comments
+          <textarea id="comments" name="comments" rows="3" cols="45" placeholder="I would rather..."></textarea>
+    </label>
+    <input type="submit" value="Submit" id="submit"/>
+
+</form>
+</main>
+</body>
+</html>

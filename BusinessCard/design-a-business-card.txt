@@ -1,0 +1,76 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Business Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="business-card">
+        <img class="profile-image" src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" alt="open pink flower">
+        <p class="full-name">Lala Quinones</p>
+    <p class="designation">Software Developer</p>
+    <p class="company">@laladventures</p>
+    <hr>
+
+    <p type="email">lala.quinones@gmail.com</p>
+    <p type="number">+1 990 589 6587</p>
+    <a href="https://www.upwork.com/freelancers/~01bdb80d5f0505af7a">Portfolio</a>
+    <hr>
+    <div class="social-media">
+        <h2>Connect with me</h2>
+        <a href="https://x.com/?lang=en">Twitter</a>
+        <a href="https://www.linkedin.com/jobs/?src=go-pa&trk=sem-ga_campid.18853522261_asid.146084015209_crid.732549151385_kw.linkedin_d.c_tid.kwd-296170574619_n.g_mt.e_geo.1026376&mcid=6994434350142418944&cid=&gad_source=1&gclid=CjwKCAiAk8G9BhA0EiwAOQxmftMC_0wKWWD2yYm6yUr5TQ694QtbULeEhXUYNSpm5jM5GcYixD_9jhoC6-UQAvD_BwE&gclsrc=aw.ds">LinkedIn</a>
+        <a href="https://github.com/">GitHub</a>
+    </div>
+</div>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: rosybrown;
+font-family: Arial, sans-serif;
+}
+hr {           
+border-top: 1px dashed slategray;
+        }
+p {
+  margin: 5px auto;
+  
+}
+a {
+
+    color: black;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.business-card {
+  margin: 100px auto auto;
+  width: 300px;
+  background-color: #608786;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+}
+img {
+  width: 250px;
+  display: block;
+  margin: 0 auto;
+}
+
+** end of undefined **
+

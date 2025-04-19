@@ -1,0 +1,95 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Styled To-Do List</title>
+</head>
+
+<body>
+<ul class="todo-list">
+    <li>
+    <label for="plan"><input type="checkbox" id="plan">Plan Road Trip</label>
+    <ul class="sub-item">
+        <li><a class="sub-item-link" href="https://letsgomonos.com/" target="_blank">Itinerary Ideas</a>    
+        </li>
+    </ul>
+    </li>
+    <li>
+    <label for="study"><input type="checkbox" id="study">Study Programming</label>
+    <ul class="sub-item">
+        <li><a class="sub-item-link" href="https://www.coursera.org/learn/python-crash-course" target="_blank">Coursera</a>    
+        </li>
+    </ul>
+    </li>
+    <li>
+    <label for="shopping"><input type="checkbox" id="shopping">Christmas Shopping</label>
+    <ul class="sub-item">
+        <li><a class="sub-item-link" href="https://www.amazon.com" target="_blank">Gift Ideas</a>    
+        </li>
+    </ul>
+    </li>
+    <li>
+    <label for="workout"><input type="checkbox" id="workout">Work Out</label>
+    <ul class="sub-item">
+        <li><a class="sub-item-link" href="https://www.youtube.com/@julia.reppel" target="_blank">Full-Body Workout</a>    
+        </li>
+    </ul>
+    </li>
+</ul>
+</body>
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-color: #7E649F;
+  color: white;
+  min-width: 300px;
+  width: 400px;
+  font-family: montserrat;
+}
+.todo-list {
+  list-style: none; 
+  margin-top: 200px;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: #8793BF;
+}
+a:visited {
+  color: #9c5D99;
+}
+a:hover {
+  color: #EAD38B
+}
+a:focus {
+  outline: 1px solid #A793BF;
+  padding: 2px;
+}
+a:active {
+  color: #9c5D99;
+}
+
+.todo-list>li {
+    display: block;
+    background-color: #280D49;
+    padding: 10px;
+    margin: 30px auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: left;
+}
+.sub-item {
+  margin-top: 10px;
+}
+
+** end of undefined **
+
