@@ -189,7 +189,7 @@ footer {
     left: 0;
     top: 0;
     height: 100vh;
-    width: 15vh;
+    width: 15vw;
   }
   .nav-list {
     flex-direction: column; 
@@ -205,11 +205,18 @@ footer {
     text-align: center; 
 
   }
-  #welcome-section,
   #project-section,
   #contact-section {
-    margin-left: 15vh; /* Adjust content to the right of the navbar */
+    margin-left: 15vw; 
     padding: 0;
+  }
+  #welcome-section {
+    margin-left: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 15vh; 
   }
 h2 {
    font-size: 1.5rem;
