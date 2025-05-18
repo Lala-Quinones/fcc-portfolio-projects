@@ -1,0 +1,152 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="styles.css">
+<title>Magazine Layout</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+</head>
+
+<body>
+<main class="magazine-cover">
+  <header class="title">Let's Gomonos
+  </header>
+  <section class="feature-article">
+    <h2>The 5 Top Must-sees to Explore Yellowstone in One Day</h2>
+    <p>Yellowstone National Park is the most beautiful national park I’ve visited. It was also THE first to be named a national park, and you can tell. Its infrastructure is incredible. You can easily explore Yellowstone in one day without too much work. The most amazing parts of the park are accessible driving or with short hikes. All in all, it’s a very drivable park.
+That being said, Yellowstone National Park is best enjoyed getting out into the backcountry. However, not everyone has the experience or time for that. That was definitely my case when I visited Yellowstone.</p>
+  </section>
+  <section class="small-article1">
+    <h2>The Ultimate Guide to SUV Camping from a Pro Car Camper</h2>
+    <p>This is my honest guide to SUV camping and what I consider most important. By the end of this article, you’ll have a better idea of how to set up your SUV for car camping. It’ll be useful whether you’re going to live in your SUV full-time or go on cheap road trips every once in a while. I daresay, my car camping setup is pretty dang comfortable.
+</p>
+  </section>
+  <section class="small-article2">
+  <h2> 7 Iconic Landmarks in Death Valley in 1 Day</h2>
+  <p>The route covers the 7 most iconic landmarks in death valley. And the best part is they’re close to each other. You end up driving a total of an hour and a half in a very busy day.</p></section>
+  <section class="cover-image">
+    <img src="https://letsgomonos.com/wp-content/uploads/2025/01/Untitled-design-3-770x1024.jpg" alt="Long road in Forest Gump point"  loading="lazy" 
+>
+  </section>
+</main>
+</body>
+
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+*,::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*border: 0.5px solid black;*/
+}
+body {
+  font-family: arial, sans-serif;
+  background-color: #E1E1E1;
+    margin: 0;
+    
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1, h2, h3 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+}
+.magazine-cover {
+    padding: 20px;
+    display: grid;
+    grid-template-areas: "title title title"
+        "feature-article feature-article cover-image"
+        "small-article1 small-article2 cover-image";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+header {
+  display: block;
+  
+}
+.title {
+  grid-area: title;
+  font-size: 3rem;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  font-weight: bold;
+  background-color: #333; 
+  color: #FDFDFD; /* darker text */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+section {
+  display: block;
+  background-color: white; 
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+.feature-article {
+  grid-area: feature-article;
+  font-size: 1.1rem;
+}
+.small-article1 {
+  grid-area: small-article1;
+}
+.small-article2 {
+  grid-area: small-article2;
+}
+.cover-image {
+  display: flex;
+      justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    padding: 10px;
+  grid-area: cover-image;
+  border-radius: 15px; 
+  height: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+@media only screen and (max-width: 640px) {
+  .magazine-cover {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      'title title title'
+      'feature-article'
+      'small-article1'
+      'small-article2'
+      'cover-image';
+  }
+  .title {
+    font-size: 2rem;
+  }
+
+  .feature-article,
+  .small-article1,
+  .small-article2,
+  .cover-image {
+    padding: 1rem;
+  }
+}
+
+
+
+
+** end of undefined **
+

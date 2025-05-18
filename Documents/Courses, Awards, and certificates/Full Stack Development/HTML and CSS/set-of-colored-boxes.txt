@@ -1,0 +1,72 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="color-grid">
+     <div class="color-box color1"></div>
+     <div class="color-box color2"></div>
+     <div class="color-box color3"></div>
+     <div class="color-box color4"></div>
+     <div class="color-box color5"></div>
+    
+    </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+display: flex;
+}
+.color-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+justify-content: center;
+  width: 100%;
+  
+}
+.color-box {
+  width: 80px;
+  height: 70px;
+  border-radius: 40px;
+}
+.color1 {
+  background-color: #4f3299;
+  margin:10px;
+}
+.color2 {
+  background-color: rgb(255,143,0);
+  margin:10px;
+}
+.color3 {
+  background-color: green;
+  margin:10px;
+}
+.color4 {
+  background-color: hsl(186.53, 100%, 37.84%);
+  margin:10px;
+}
+.color5 {
+  background-color: #FDD835;
+  margin:10px;
+}
+
+** end of undefined **
+

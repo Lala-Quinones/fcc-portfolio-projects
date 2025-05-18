@@ -1,0 +1,107 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+         <label>Full Name <input type="text" id="name" name="name"></label>   
+         <label>Email <input type="email" id="email" name="email"></label>   
+         <label>Desired Position</label> <select id="position" name="position">
+            <option value="" disabled selected>Select a position</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+             </select>
+            <fieldset class="radio-group" id="availability">
+                <legend>Availability</legend>
+                <input type="radio" name="availability" id="full-time"><label for="full-time">Full-Time</label>
+                <input type="radio" name="availability" id="part-time"><label for="part-time">Part-Time</label>
+
+            </fieldset>
+            <legend>Why do you want this job?</legent>
+            <textarea id="message">
+                
+                </textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  margin: 20px;
+  display: block;
+   color: black;
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+form {
+  
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 40px auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: 2px gray;
+  padding: 2rem;
+  border-bottom: 3px solid #CFCFC4;
+}
+input {
+  width: 100%;
+  
+}
+input:focus, textarea:focus {
+  border: 2px solid midnightblue;
+}
+input:invalid, select:invalid, textarea:invalid {
+  border: 2px solid red
+}
+input:valid, select:valid, textarea:valid {
+  border: 2px solid green
+}
+button {
+  background-color: green;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 20px auto;
+}
+button:hover {
+  background-color: #264F73;
+}
+.radio-group input[type="radio"]:checked {
+  width: 20px;
+  border: 2px solid #F7D334;
+  background-color: #F7D334;
+  box-shadow: 0 0 5px gray;
+}
+.radio-group input[type="radio"]:checked + label {
+  color: #264F73;
+}
+input:nth-child(1) {
+  border-ratio: 10px;
+}
+
+
+** end of undefined **
+
